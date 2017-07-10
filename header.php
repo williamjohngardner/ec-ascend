@@ -15,7 +15,7 @@
           <div class="col-sm-4"></div>
           <div class="col-sm-4">
             <div class="header-center">
-              <a href="<?php bloginfo('url'); ?>"><img src="/images/ascend_logo_opt.png" alt="Ascend Disability Lawyers, LLC"></a>
+              <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/ascend_logo_opt.png" alt="Ascend Disability Lawyers, LLC"></a>
             </div>
           </div>
           <div class="col-sm-4">

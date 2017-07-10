@@ -48,12 +48,12 @@
           <h3 id="attorney-button" class="cta-button">Get to Know Us</h3>
         </div>
         <div class="attorney-pic">
-          <img src="images/harmon_opt.jpg" alt="">
+          <img src="<?php bloginfo('template_directory'); ?>/images/harmon_opt.jpg" alt="">
         </div>
     </section>
     <section class="results-section">
       <div class="results-pic">
-        <img src="images/boat_gradient_opt.jpg" alt="">
+        <img src="<?php bloginfo('template_directory'); ?>/images/boat_gradient_opt.jpg" alt="">
       </div>
       <div class="results-desc">
         <h2 id="results-title" class="section-title">Only <span id="orange">Results</span> Matter</h2>
@@ -67,12 +67,12 @@
           <h3 id="team-button" class="cta-button">Learn More</h3>
         </div>
         <div class="team-pic">
-          <img src="images/mountain_gradient_opt.jpg" alt="">
+          <img src="<?php bloginfo('template_directory'); ?>/images/mountain_gradient_opt.jpg" alt="">
         </div>
     </section>
     <section class="vets-section">
       <div class="vets-pic">
-        <img src="images/marine_opt.jpg" alt="">
+        <img src="<?php bloginfo('template_directory'); ?>/images/marine_opt.jpg" alt="">
       </div>
       <div class="vets-desc">
         <h2 id="vets-title" class="section-title">VETERANS <span id="orange">DISABILITY</span> CLAIMS</h2>
