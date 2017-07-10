@@ -1,0 +1,562 @@
+/*
+Theme Name: Ascend
+Theme URI:
+Author: Bill Gardner
+Author URI: http://www.williamjgardner.com
+Description: Wordpress Theme for ascenddisability.com
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+  1.1 - Clearfix
+  1.2 - Transitions
+2.0 - Formatting
+  2.1 - Pagination
+  2.2 - Popover
+3.0 - Header
+  3.1 - Main Nav
+  3.2 - Top Header Bar
+4.0 - Footer
+5.0 - Contact Form
+6.0 - Bottom Home
+7.0 - Practice Area
+8.0 - Accordions
+9.0 - Attorneys
+  9.1 - Attorney Search
+10.0 - News and Blogs
+11.0 - Hero Carousel
+12.0 - Cases
+x.0 - Structure
+  x.1 - Mobile
+  x.2 - Mobile iPhone
+  x.3 - Tablet
+  x.4 - Tablet and Up
+  x.5 - Wide Desktop
+  x.6 - HDPI
+  x.7 - Small height monitor
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> STYLE GUIDE:
+----------------------------------------------------------------
+Nimrod: 'NimrodW01-SmallAdsBold';
+Avenir Next Regular: 'AvenirNextLTW01-Regular';
+Avenir Next Medium: 'AvenirNextLTW01-Medium';
+Avenir Next Italic: 'AvenirNextLTW01-Italic';
+ITC Blair: 'ITC Blair W01 Light'
+
+Red: #9a1634;
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - RESET
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul, ol {
+  font-family:'Oswald', sans-serif;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style-type: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+1.2 - SITE WIDE ELEMENTS
+--------------------------------------------------------------*/
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.section-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.cta-button {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #febb63;
+  border-radius: 4px;
+  padding: 7px 15px;
+  text-align: center;
+  width: 200px;
+}
+
+.cta-button:hover {
+  background-color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+#cta2 {
+  margin-bottom: 50px;
+}
+
+#gethelpbutton {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#orange {
+  color: #febb63;
+}
+
+/*--------------------------------------------------------------
+2.0 - HERO SECTION
+--------------------------------------------------------------*/
+.hero-section {
+  background-image: url(images/bridge_background_opt.jpg);
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.header-center img {
+  padding-top: 10px;
+}
+
+.header-right {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-right h2 {
+  font-size: 1.35em;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.35em;
+  color: #fff;
+  background-color: #1373a6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* 2.1 - MAIN MENU STYLING */
+
+.main-menu {
+  background-color: rgba(19,115,166,0.85);
+}
+
+.main-menu ul {
+  text-align: center;
+}
+
+.main-menu li {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.35em;
+  margin: 10px;
+}
+
+/* 2.2 - HERO CONTENT */
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 700 !important;
+  color: #fff;
+  text-align: center;
+  padding-top: 55px;
+  line-height: 1.25em;
+}
+
+.hero-link-section {
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+}
+
+.hero-link {
+  background-color: rgba(113,171,202, 1);
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-link h3 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.25em;
+}
+
+.hero-link i {
+  color: #fff;
+  background-color: #1373a6;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  padding-top: 15px;
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+3.0 - CTA SECTIONS
+--------------------------------------------------------------*/
+
+.cta {
+  background-color: rgba(48,152,213, 1);
+  padding: 20px;
+  margin: 0;
+}
+
+.cta h3 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.25em;
+  font-weight: 300;
+  padding-top: 50px;
+}
+
+.cta h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+/*--------------------------------------------------------------
+4.0 - ATTORNEY SECTION
+--------------------------------------------------------------*/
+
+.attorney-desc {
+  width: 55%;
+  height: 450px;
+  float: left;
+  text-align: right;
+  padding-right: 35px;
+  background-color: #fff;
+}
+
+.attorney-pic {
+  float: right;
+  width: 45%;
+}
+
+#attorney-title {
+  margin: 50px 0 50px 0;
+  color: #1373a6;
+}
+
+#attorney-text {
+  margin-left: 50px;
+}
+
+#attorney-button {
+  float: right;
+  margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+4.1 - RESULTS SECTION
+--------------------------------------------------------------*/
+
+.results-pic {
+  float: left;
+  width: 45%;
+}
+
+.results-desc {
+  width: 55%;
+  height: 437px;
+  float: right;
+  text-align: left;
+  padding-left: 35px;
+  background-color:#0d72c7;
+}
+
+#results-title {
+  font-size: 2.5em;
+  margin-top: 100px;
+  color: #fff;
+}
+
+#results-text {
+  margin-top: 40px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+4.2 - TEAM SECTION
+--------------------------------------------------------------*/
+
+.team-desc {
+  width: 55%;
+  height: 427px;
+  float: left;
+  text-align: right;
+  padding-right: 35px;
+  background-color: #fff;
+}
+
+.team-pic {
+  float: right;
+  width: 45%;
+}
+
+#team-title {
+  font-size: 2.5em;
+  margin: 50px 0 50px 0;
+  color: #1373a6;
+}
+
+#team-text {
+  margin-left: 50px;
+}
+
+#team-button {
+  float: right;
+  margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+4.3 - VETS SECTION
+--------------------------------------------------------------*/
+
+.vets-pic {
+  float: left;
+  width: 45%;
+}
+
+.vets-desc {
+  width: 55%;
+  height: 432px;
+  float: right;
+  text-align: left;
+  padding-left: 35px;
+  background-color:#0d72c7;
+}
+
+#vets-title {
+  font-size: 2.5em;
+  margin-top: 100px;
+  color: #fff;
+}
+
+#vets-text {
+  margin-top: 40px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+4.4 - SUCCESS SECTION
+--------------------------------------------------------------*/
+
+.success {
+  background-image: url(images/jacksonsq_opt.jpg);
+  height: 960px;
+}
+
+#success-wrapper {
+  background-color: rgba(255,255,255,.25);
+  /*padding-top: 40px;*/
+  padding-bottom: 40px;
+}
+
+#success-title {
+  font-size: 2.5em;
+  margin-top: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+#success-text {
+  margin-top: 40px;
+  color: #fff;
+}
+
+#success-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30px;
+}
+
+/*--------------------------------------------------------------
+5.0 - PRE FOOTER COLUMNS
+--------------------------------------------------------------*/
+
+.pre-footer-columns {
+  background-color: #0d72c7;
+}
+
+.pre-footer-column-1 {
+  float: left;
+  padding-top: 40px;
+  line-height: 1.35em;
+}
+
+.pre-footer-column-1 h3 {
+   text-transform: uppercase;
+   font-size: 1.35em;
+   font-family: 'Oswald', sans-serif;
+   color: #ffffff;"
+
+}
+
+.pre-footer-column-1 h5 {
+   text-transform: uppercase;
+   font-family: 'Oswald',
+   sans-serif; color: #ffffff;"
+}
+
+.pre-footer-column-1 li {
+   font-family: 'Oswald', sans-serif;
+   color: #ffffff;
+   list-style-type: none;"
+}
+
+.pre-footer-column-2 {
+  padding-top: 40px;
+  width: 300px;
+  margin-right: 0;
+}
+
+.pre-footer-column-2 h3 {
+   text-transform: uppercase;
+   font-size: 1.35em;
+   font-family: 'Oswald', sans-serif;
+   color: #ffffff;"
+}
+
+.pre-footer-column-2 input {
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+  width: 260px;
+  height: 45px;
+  margin-top: 10px;
+}
+
+#footer-contact-button {
+  margin-top: 25px;
+}
+
+.pre-footer-column-3 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.pre-footer-column-3 h3 {
+   text-transform: uppercase;
+   font-size: 1.35em;
+   font-family: 'Oswald', sans-serif;
+   color: #ffffff;
+}
+
+.pre-footer-column-3 img {
+  padding-top: 20px;
+}
+
+.mapoverlay {
+  background:transparent;
+  position:relative;
+  width:300px;
+  height:388px; /* your iframe height */
+  top:388px;  /* your iframe height */
+  margin-top:-388px;  /* your iframe height */
+}
+
+/*--------------------------------------------------------------
+6.0 - FOOTER
+--------------------------------------------------------------*/
+
+footer {
+  background-color: rgba(48,152,213, 1);
+  border-top: solid #fff 1px;
+}
+
+#disclaimer {
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#disclaimer p {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+#disclaimer h5 {
+  text-align: center;
+}
+
+#disclaimer a {
+  color: #91d6f7;
+}
+
+#disclaimer a:hover {
+  color: #0d72c7;
+  text-decoration: none;
+}
