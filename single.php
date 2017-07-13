@@ -15,7 +15,6 @@
           <?php the_post_thumbnail( 'medium_large' ) ?>
           <p><?php the_content() ?></p>
         </div>
-
   <?php endwhile; else : ?>
   	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
