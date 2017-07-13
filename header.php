@@ -8,7 +8,7 @@
     <script src="https://use.fontawesome.com/7978a0b803.js"></script>
     <link rel="icon" href="images/faviocon.png" type="image/gif">
   </head>
-  <body>
+  <body <?php body_class(); ?>>
     <section class="hero-section">
       <header>
         <div class="container">
@@ -39,13 +39,4 @@
           wp_nav_menu( $defaults );
 
          ?>
-<!-- 
-        <ul>
-          <li>HOME</li>
-          <li>FIRM OVERVIEW</li>
-          <li>SOCIAL SECURITY DISABILITY</li>
-          <li>VETERANS DISABILITY</li>
-          <li>BLOG</li>
-          <li>CAREERS</li>
-        </ul> -->
       </nav>

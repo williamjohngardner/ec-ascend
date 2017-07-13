@@ -163,6 +163,12 @@ table {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  box-shadow: 3px 3px 7px #333;
+}
+
+#gethelpbutton:hover {
+  background-color: #000;
+  transition: all 0.2s ease-in-out;
 }
 
 #orange {
@@ -386,6 +392,7 @@ button {
 #team-button {
   float: right;
   margin-top: 50px;
+  box-shadow: 3px 3px 7px #777;
 }
 
 /*--------------------------------------------------------------
@@ -507,7 +514,9 @@ button {
 }
 
 #footer-contact-button {
+  width: 260px;
   margin-top: 25px;
+  box-shadow: 3px 3px 7px #333;
 }
 
 .pre-footer-column-3 {
@@ -605,6 +614,7 @@ footer {
 .interior_page_content p {
   color: #333;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 200;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  font-weight: 300;
 }
