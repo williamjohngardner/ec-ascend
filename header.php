@@ -27,6 +27,19 @@
         </div>
       </header>
       <nav class="main-menu">
+
+        <?php
+
+          $defaults = array(
+            'container' => false,
+            'theme_location' => 'main-menu',
+            'menu_class' => 'main-menu',
+          );
+
+          wp_nav_menu( $defaults );
+
+         ?>
+<!-- 
         <ul>
           <li>HOME</li>
           <li>FIRM OVERVIEW</li>
@@ -34,5 +47,5 @@
           <li>VETERANS DISABILITY</li>
           <li>BLOG</li>
           <li>CAREERS</li>
-        </ul>
+        </ul> -->
       </nav>

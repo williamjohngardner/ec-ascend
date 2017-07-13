@@ -1,3 +1,9 @@
+<section class="cta">
+  <div id="cta2" class="container">
+      <h3>READY TO SCHEDULE YOUR <span id="orange">FREE</span> CONSULTATION? CALL <span id="orange">(855) 631-2544</span> OR</h3>
+      <button id="gethelpbutton" type="button" name="gethelpnow">Get Help Now</button>
+  </div>
+</section>
 <section class="pre-footer-columns">
   <div class="container">
     <div class="row">
