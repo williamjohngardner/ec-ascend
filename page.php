@@ -14,10 +14,10 @@
         <div class="col-sm-8 interior_page_content">
           <p><?php the_content() ?></p>
         </div>
-      </div>
-    </div>
-
   <?php endwhile; else : ?>
   	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
+      <?php get_sidebar(); ?>
+    </div>
+  </div>
 <?php get_footer() ?>
