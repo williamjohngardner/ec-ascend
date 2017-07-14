@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-
+  <div class="homepage_header_image">
+    <img src="<?php bloginfo( 'template_directory' ) ?>/images/bridge_background_opt.jpg" alt=" <?php bloginfo( 'name' ) ?> ">
+  </div>
       <div class="hero-title">
         <h1>REPRESENTING THE SERIOUSLY<br>INJURED AND DISABLED</h1>
       </div>
@@ -81,11 +83,14 @@
     </section>
     <section class="cta">
       <div id="cta2" class="container">
-          <h3>READY TO SCHEDULE YOUR <span id="orange">FREE</span> CONSULTATION? CALL <span id="orange">(855) 631-2544</span> OR</h3>
+          <h3>READY TO SCHEDULE YOUR <span id="orange">FREE</span> CONSULTATION? CALL <span id="orange">(855) 631-2544</span></h3>
           <button id="gethelpbutton" type="button" name="gethelpnow">Get Help Now</button>
       </div>
     </section>
     <section>
+      <div class="success-bkgrnd-img">
+        <img src=" <?php bloginfo( 'template_directory' ) ?>/images/jacksonsq_opt.jpg" alt="bloginfo( 'name' )">
+      </div>
       <div class="success">
         <br>
         <br>

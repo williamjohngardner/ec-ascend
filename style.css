@@ -187,6 +187,12 @@ header {
   background-color: rgba(0,0,0,0.8);
 }
 
+.homepage_header_image {
+  position: absolute;
+  top: 0;
+  z-index: -1
+}
+
 .header-center img {
   padding-top: 10px;
 }
@@ -243,9 +249,7 @@ button {
 }
 
 .hero-link-section {
-  margin-top: 80px;
-  margin-bottom: 20px;
-
+  margin-top: 75px;
 }
 
 .hero-link {
@@ -255,7 +259,8 @@ button {
 }
 
 .hero-link h3 {
-  font-size: 2em;
+  font-size: 1.75em;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 20px;
   line-height: 1.25em;
@@ -286,8 +291,8 @@ button {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.25em;
-  font-weight: 300;
+  font-size: 2.5em;
+  font-weight: 500;
   padding-top: 50px;
 }
 
@@ -330,6 +335,7 @@ button {
 #attorney-button {
   float: right;
   margin-top: 50px;
+  box-shadow: 3px 3px 7px #777;
 }
 
 /*--------------------------------------------------------------
@@ -428,13 +434,18 @@ button {
 4.4 - SUCCESS SECTION
 --------------------------------------------------------------*/
 
+.success-bkgrnd-img {
+  position: absolute;
+  z-index: -1
+}
+
 .success {
-  background-image: url(images/jacksonsq_opt.jpg);
+  /*background-image: url(images/jacksonsq_opt.jpg);*/
   height: 960px;
 }
 
 #success-wrapper {
-  background-color: rgba(255,255,255,.25);
+  background-color: rgba(0,0,0,.5);
   /*padding-top: 40px;*/
   padding-bottom: 40px;
 }
