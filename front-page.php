@@ -47,7 +47,7 @@
         <div class="attorney-desc">
           <h2 id="attorney-title" class="section-title"><?php the_field( 'attorney_title' ) ?></h2>
           <p id="attorney-text" class="section-text"><?php the_field( 'attorney_text' ) ?></p>
-          <a href="#"><h3 id="attorney-button" class="calltoaction-button"><?php the_field( 'attorney_button_text' ) ?></h3></a>
+          <a href="<?php the_field( 'attorney_button_url' ) ?>"><h3 id="attorney-button" class="calltoaction-button"><?php the_field( 'attorney_button_text' ) ?></h3></a>
         </div>
         <div class="attorney-pic">
           <img src="<?php the_field( 'attorney_pic' ) ?>" alt="<?php the_field( 'attorney_title' ) ?>">
@@ -55,15 +55,17 @@
     </section>
     <section class="results-section">
       <div class="results-pic">
-        <img src="<?php bloginfo('template_directory'); ?>/images/boat_gradient_opt.jpg" alt="">
+        <img src="<?php the_field('results_pic'); ?>" alt="<?php the_field( 'attorney_title' ) ?>">
       </div>
       <div class="results-desc">
+        <!-- THE TITLES IN THESE SECTIONS NEED TO BE CONSIDERED.  HOW WILL DATA BE ENTERED AND STILL HAVE MULTICOLORED TEXT???? -->
         <h2 id="results-title" class="section-title">Only <span id="orange">Results</span> Matter</h2>
         <p id="results-text" class="section-text">Our firm focuses on one thing—Disability Benefits.<br><br>We are not a general practice firm that spreads its resources thin by taking any type of case that walks through the door. Our entire firm structure is built around representing hard-working Americans in their Disability cases. This allows us to produce the best possible results for our clients.</p>
       </div>
     </section>
     <section class="team-section">
         <div class="team-desc">
+          <!-- THE TITLES IN THESE SECTIONS NEED TO BE CONSIDERED.  HOW WILL DATA BE ENTERED AND STILL HAVE MULTICOLORED TEXT???? -->
           <h2 id="team-title" class="section-title">YOU NEED AN <span id="orange">EXPERIENCED</span> TEAM</h2>
           <p id="team-text" class="section-text">Ascend Disability has a single mission—to get our clients the benefits they deserve. We accomplish this by hiring talented, experienced attorneyss and staff who know how to navigate a very complicated system. Our firm not only understands the law, but we also get to know our clients on an individual basis. We understand that to win a case, our lawyers must paint a vivid picture of the entire person, as well as argue the law masterfully. With Ascend Disability, it’s personal.</p>
           <h3 id="team-button" class="calltoaction-button">Learn More</h3>
@@ -72,7 +74,7 @@
           <img src="<?php bloginfo('template_directory'); ?>/images/mountain_gradient_opt.jpg" alt="">
         </div>
     </section>
-    <section class="vets-section">
+    <section class="vets-section"><!-- SHOULD THIS SECTION BE MADE OPTIONAL?????? -->
       <div class="vets-pic">
         <img src="<?php bloginfo('template_directory'); ?>/images/marine_opt.jpg" alt="">
       </div>
