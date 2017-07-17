@@ -4,15 +4,23 @@
   </div>
 
   <div class="interior_page_header">
-    <h1><?php bloginfo( 'name' ) ?>'s Blog Posts</h1>
+    <h1><?php the_title() ?></h1>
   </div>
   <div class="container">
     <div class="row">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="col-sm-8">
-          <h1><?php the_title() ?></h1>
+          <br>
+          <br>
+          <p class="blog_page_subtext">Posted by: <?php the_author() ?> | on <?php echo get_the_date() ?></p>
+          <br>
           <?php the_post_thumbnail( 'medium_large' ) ?>
-          <p><?php the_content() ?></p>
+          <br>
+          <br>
+          <p class="blog-content"><?php the_content() ?></p>
+          <br>
+          <p class="blog_page_subtext">Filed Under: <?php the_category(', ') ?></p>
+          <br>
         </div>
       <?php endwhile; else : ?>
       	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

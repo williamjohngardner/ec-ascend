@@ -6,7 +6,7 @@
 
     <?php wp_head(); ?>
     <script src="https://use.fontawesome.com/7978a0b803.js"></script>
-    <link rel="icon" href="images/faviocon.png" type="image/gif">
+    <link rel="icon" href="<?php bloginfo( 'template_directory' ) ?>/images/faviocon.png" type="image/gif">
   </head>
   <body <?php body_class(); ?>>
     <section class="hero-section">

@@ -1,6 +1,6 @@
-<section class="cta">
-  <div id="cta2" class="container">
-      <h3>READY TO SCHEDULE YOUR <span id="orange">FREE</span> CONSULTATION? CALL <span id="orange">(855) 631-2544</span> OR</h3>
+<section class="calltoaction">
+  <div id="calltoaction" class="container">
+      <h3>READY TO SCHEDULE YOUR <span id="orange">FREE</span> CONSULTATION? <br>CALL <span id="orange">(855) 631-2544</span> OR</h3>
       <button id="gethelpbutton" type="button" name="gethelpnow">Get Help Now</button>
   </div>
 </section>
@@ -41,7 +41,7 @@
             <input type="text" name="yourphone" value="" placeholder="Your Phone">
             <input type="text" name="yourage" value="" placeholder="How Old are You?">
             <br>
-            <h3 id="footer-contact-button" class="cta-button">Free Consultation</h3>
+            <h3 id="footer-contact-button" class="calltoaction-button">Free Consultation</h3>
           </div>
         </div>
       </div>

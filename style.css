@@ -96,7 +96,6 @@ a:hover {
 p, li, ul, ol  {
   color: #333;
   font-family: 'Open Sans', sans-serif;
-  /*font-size: 1.15em;*/
   line-height: 1.25em;
   font-weight: 500;
 }
@@ -108,8 +107,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
   line-height: 1;
 }
-/*ol, ul {
-  list-style-type: none;*/
+ol, ul {
+  list-style-type: none
 }
 blockquote, q {
   quotes: none;
@@ -137,7 +136,7 @@ h1 {
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 2.5em;
+  /*font-size: 2.5em;*/
   text-align: center;
   text-transform: uppercase;
   padding: 10px 0;
@@ -145,14 +144,20 @@ h1 {
 
 h2 {
   color: #333;
-  font-size: 2.4em;
+  /*font-size: 2.4em;*/
   font-weight: 400;
 }
 
 h3 {
   color: #333;
-  font-size: 2em;
+  /*font-size: 2em;*/
   font-weight: 400;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 200;
 }
 
 .section-title {
@@ -167,7 +172,7 @@ h3 {
   line-height: 1.4;
 }
 
-.cta-button {
+.calltoaction-button {
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -179,12 +184,12 @@ h3 {
   width: 200px;
 }
 
-.cta-button:hover {
+.calltoaction-button:hover {
   background-color: #000;
   transition: all 0.2s ease-in-out;
 }
 
-#cta2 {
+#calltoaction2 {
   margin-bottom: 50px;
 }
 
@@ -261,9 +266,10 @@ button {
 }
 
 .main-menu li {
+  font-family: 'Oswald', sans-serif;
   display: inline-block;
   color: #fff;
-  font-size: 1.35em;
+  font-size: 1.25em;
   margin: 10px;
 }
 
@@ -279,7 +285,7 @@ button {
 }
 
 .hero-link-section {
-  margin-top: 75px;
+  margin-top: 65px;
 }
 
 .hero-link {
@@ -289,10 +295,11 @@ button {
 }
 
 .hero-link h3 {
-  font-size: 1.75em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
   font-weight: 500;
   color: #fff;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   line-height: 1.25em;
 }
 
@@ -311,13 +318,13 @@ button {
 3.0 - CTA SECTIONS
 --------------------------------------------------------------*/
 
-.cta {
+.calltoaction {
   background-color: rgba(48,152,213, 1);
   padding: 20px;
   margin: 0;
 }
 
-.cta h3 {
+.calltoaction h3 {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -326,7 +333,7 @@ button {
   padding-top: 50px;
 }
 
-.cta h4 {
+.calltoaction h4 {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   text-align: center;
@@ -624,12 +631,15 @@ footer {
 --------------------------------------------------------------*/
 
 .interior_page_header {
+  font-size: 2.25em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   width: 100%;
   background-color: rgba(19,115,166,0.8);
 }
 
 .interior_page_header_image {
-  height: 318px;
+  height: 308px;
 }
 
 .interior_page_header_image img {
@@ -640,6 +650,13 @@ footer {
 
 .interior_page_content {
   padding: 75px;
+}
+
+.interior_page_content h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -675,3 +692,24 @@ footer {
 /*--------------------------------------------------------------
 9.0 -  BLOG
 --------------------------------------------------------------*/
+
+.blog_page_header {
+  font-size: 2.25em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #333;
+  text-align: left;
+}
+
+.blog_page_header:hover {
+  color: #91d6f7;
+}
+
+.blog_page_subtext {
+  font-size: 1em;
+}
+
+.blog-content a {
+  color: blue;
+}
