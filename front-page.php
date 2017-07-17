@@ -1,37 +1,37 @@
 <?php get_header(); ?>
   <div class="homepage_header_image">
-    <img src="<?php bloginfo( 'template_directory' ) ?>/images/bridge_background_opt.jpg" alt=" <?php bloginfo( 'name' ) ?> ">
+    <img src="<?php the_field( 'hero_image' ) ?>" alt=" <?php bloginfo( 'name' ) ?> ">
   </div>
       <div class="hero-title">
-        <h1>REPRESENTING THE SERIOUSLY<br>INJURED AND DISABLED</h1>
+        <h1><?php the_field( 'tagline' ) ?></h1>
       </div>
       <div class="container hero-link-section">
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-pagelines fa-3x"></i></li>
-            <li><h3>What is Social<br>Security Disability?</h3></li>
-            <li><button type="button" name="herobutton1">Read More</button></li>
+            <li><h3><?php the_field( 'hero_link_1' ) ?></h3></li>
+            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-question fa-3x" aria-hidden="true"></i></li>
-            <li><h3>Are You Thinking<br>About Applying?</h3></li>
-            <li><button type="button" name="herobutton1">Read More</button></li>
+            <li><h3><?php the_field( 'hero_link_2' ) ?></h3></li>
+            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-university fa-3x" aria-hidden="true"></i></li>
-            <li><h3>Do I Qualify for<br>Veterans Disability?</h3></li>
-            <li><button type="button" name="herobutton1">Read More</button></li>
+            <li><h3><?php the_field( 'hero_link_3' ) ?></h3></li>
+            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-gavel fa-3x" aria-hidden="true"></i></li>
-            <li><h3>How Can<br>A Lawyer Help?</h3></li>
-            <li><button type="button" name="herobutton1">Read More</button></li>
+            <li><h3><?php the_field( 'hero_link_4' ) ?></h3></li>
+            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
           </ul>
         </div>
       </div>
@@ -39,18 +39,18 @@
     </section>
     <section class="calltoaction">
       <div class="container">
-          <h3>Social Security Disability In New Orleans</h3>
-          <h4>Taking on the Social Security Administration with powerful focus and clarity</h4>
+          <h3><?php the_field( 'cta_title' ) ?></h3>
+          <h4><?php the_field( 'cta_tagline' ) ?></h4>
       </div>
     </section>
     <section class="attorney-section">
         <div class="attorney-desc">
-          <h2 id="attorney-title" class="section-title">Jason Harmon | Attorney at Law</h2>
-          <p id="attorney-text" class="section-text">Ascend Disability is a law firm dedicated to representing seriously injured and disabled Americans who have spent their lives working to provide for their families. At Ascend Disability, we believe that it is our duty, not only to provide the most effective legal representation available, but also to guide our clients through the daunting process of applying for disability benefits.</p>
-          <h3 id="attorney-button" class="calltoaction-button">Get to Know Us</h3>
+          <h2 id="attorney-title" class="section-title"><?php the_field( 'attorney_title' ) ?></h2>
+          <p id="attorney-text" class="section-text"><?php the_field( 'attorney_text' ) ?></p>
+          <a href="#"><h3 id="attorney-button" class="calltoaction-button"><?php the_field( 'attorney_button_text' ) ?></h3></a>
         </div>
         <div class="attorney-pic">
-          <img src="<?php bloginfo('template_directory'); ?>/images/harmon_opt.jpg" alt="">
+          <img src="<?php the_field( 'attorney_pic' ) ?>" alt="<?php the_field( 'attorney_title' ) ?>">
         </div>
     </section>
     <section class="results-section">

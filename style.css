@@ -88,6 +88,10 @@ a {
   text-decoration: none;
 }
 
+p > a {
+  color: #1373a6;
+}
+
 a:hover {
   color: #91d6f7;
   text-decoration: none;
@@ -708,8 +712,4 @@ footer {
 
 .blog_page_subtext {
   font-size: 1em;
-}
-
-.blog-content a {
-  color: blue;
 }

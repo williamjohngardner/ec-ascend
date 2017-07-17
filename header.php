@@ -15,12 +15,12 @@
           <div class="col-sm-4"></div>
           <div class="col-sm-4">
             <div class="header-center">
-              <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/ascend_logo_opt.png" alt="Ascend Disability Lawyers, LLC"></a>
+              <a href="<?php bloginfo('url'); ?>"><img src="<?php the_field('site_logo') ?>" alt="<?php bloginfo( 'name' ) ?>"></a>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="header-right">
-              <h2><a href="tel:8556312544">(855) 631-2544</a></h2>
+              <h2><a href="tel:<?php the_field('tel_area_code') ?><?php the_field('tel_exchange') ?><?php the_field('tel_line_number') ?>">(<?php the_field('tel_area_code') ?>) <?php the_field('tel_exchange') ?>-<?php the_field('tel_line_number') ?></a></h2>
               <button type="button" name="freeconsult">Free Consultation</button>
             </div>
           </div>

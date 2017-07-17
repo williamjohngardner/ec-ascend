@@ -17,7 +17,7 @@
           <?php the_post_thumbnail( 'medium_large' ) ?>
           <br>
           <br>
-          <p class="blog-content"><?php the_content() ?></p>
+          <p><?php the_content() ?></p>
           <br>
           <p class="blog_page_subtext">Filed Under: <?php the_category(', ') ?></p>
           <br>

@@ -6,7 +6,7 @@
 <div class="interior_page_header">
   <h1><?php the_title() ?></h1>
 </div>
-<!-- <div class="container"> -->
+<div class="container">
   <div class="row">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="col-sm-8 interior_page_content">
