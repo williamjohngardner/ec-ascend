@@ -210,7 +210,7 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-#orange {
+.orange {
   color: #febb63;
 }
 

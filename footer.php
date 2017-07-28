@@ -1,6 +1,6 @@
 <section class="calltoaction">
   <div id="calltoaction" class="container">
-      <h3>READY TO SCHEDULE YOUR <span id="orange">FREE</span> CONSULTATION? <br>CALL <span id="orange">(855) 631-2544</span> OR</h3>
+      <h3>READY TO SCHEDULE YOUR <span class="orange">FREE</span> CONSULTATION? <br>CALL <span class="orange">(855) 631-2544</span> OR</h3>
       <button id="gethelpbutton" type="button" name="gethelpnow">Get Help Now</button>
   </div>
 </section>
@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="pre-footer-column-1">
-          <h3><span id="orange">Ascend</span> Disability <span id="orange">Lawyers</span>, LLC</h3>
+          <h3><span class="orange">Ascend</span> Disability <span class="orange">Lawyers</span>, LLC</h3>
           <br>
           <h5>Representing Seriously Injured<br>&amp; Disabled Americans</h5>
           <br>
@@ -33,7 +33,7 @@
       </div>
       <div class="col-sm-4">
         <div class="pre-footer-column-2">
-          <h3><span id="orange">CONTACT</span> US</h3>
+          <h3><span class="orange">CONTACT</span> US</h3>
           <br>
           <div class="footer-contact-form">
             <input type="text" name="yourname" value="" placeholder="Your Name">
@@ -47,7 +47,7 @@
       </div>
       <div class="col-sm-4">
         <div class="pre-footer-column-3">
-          <h3><span id="orange">Find</span> Us</h3>
+          <h3><span class="orange">Find</span> Us</h3>
           <br>
           <div class="mapoverlay"></div>
           <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13829.36273190411!2d-90.1287505!3d29.9408778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x581a675b208a9dd3!2sAscend+Disability+Lawyers!5e0!3m2!1sen!2sus!4v1495819298398" width="300" height="338" frameborder="0" allowfullscreen=""></iframe>
