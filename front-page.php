@@ -66,7 +66,6 @@
     </section>
     <section class="team-section">
         <div class="team-desc">
-          <!-- THE TITLES IN THESE SECTIONS NEED TO BE CONSIDERED.  HOW WILL DATA BE ENTERED AND STILL HAVE MULTICOLORED TEXT???? -->
           <h2 id="team-title" class="section-title"><?php the_field( 'team_title_white_1' ) ?> <span class="orange"><?php the_field( 'team_title_orange' ) ?></span> <?php the_field( 'team_title_white_2' ) ?></h2>
           <p id="team-text" class="section-text"><?php the_field( 'team_description' ) ?> </p>
           <h3 id="team-button" class="calltoaction-button"><?php the_field( 'team_cta_button' ) ?></h3>
@@ -84,9 +83,9 @@
         <p id="vets-text" class="section-text"><?php the_field( 'vet_description' ) ?></p>
       </div>
     </section>
-    <section>
+    <section class="calltoaction">
       <div class="container">
-        <div id="calltoaction2" class="calltoaction">
+        <div id="calltoaction2">
             <h3>READY TO SCHEDULE YOUR <span class="orange">FREE</span> CONSULTATION? CALL <span class="orange">(855) 631-2544</span></h3>
             <button id="gethelpbutton" type="button" name="gethelpnow">Get Help Now</button>
         </div>

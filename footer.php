@@ -9,15 +9,15 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="pre-footer-column-1">
-          <h3><span class="orange">Ascend</span> Disability <span class="orange">Lawyers</span>, LLC</h3>
+          <h3><span class="orange"><?php the_field( 'company_title_orange_1' ) ?></span> <?php the_field( 'company_title_white' ) ?> <span class="orange"><?php the_field( 'company_title_orange_2' ) ?></span></h3>
           <br>
-          <h5>Representing Seriously Injured<br>&amp; Disabled Americans</h5>
+          <h5><?php the_field( 'tagline' ) ?></h5>
           <br>
           <ul>
-            <li>721 Hillary Street</li>
-            <li>New Orleans, LA 70118</li>
-            <li>Toll Free:<a style="color: white;" href="tel:8556312544">(855) 631-2544</a></li>
-            <li>Ph:<a style="color: white;" href="tel:5047773331">(504) 777-3331</a></li>
+            <li><?php the_field( 'street_address_1' ) ?></li>
+            <li><?php the_field( 'city_state_zip' ) ?></li>
+            <li>Toll Free:<a style="color: white;" href="tel:<?php the_field( 'toll_free_phone_raw' ) ?>"><?php the_field( 'toll_free_phone' ) ?></a></li>
+            <li>Ph:<a href="tel:<?php the_field('tel_area_code') ?><?php the_field('tel_exchange') ?><?php the_field('tel_line_number') ?>">(<?php the_field('tel_area_code') ?>) <?php the_field('tel_exchange') ?>-<?php the_field('tel_line_number') ?></a></li>
           </ul>
           <br>
           <ul>
