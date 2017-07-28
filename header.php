@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title><?php wp_title(); ?></title>
+    <title><?php bloginfo( 'name' ) | single_post_title() ?></title>
 
     <?php wp_head(); ?>
     <script src="https://use.fontawesome.com/7978a0b803.js"></script>
