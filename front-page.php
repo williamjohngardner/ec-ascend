@@ -43,7 +43,8 @@
           <h4><?php the_field( 'cta_tagline' ) ?></h4>
       </div>
     </section>
-    <section class="attorney-section">
+    <section>
+      <div class="attorney-section">
         <div class="attorney-desc">
           <h2 id="attorney-title" class="section-title"><?php the_field( 'attorney_title' ) ?></h2>
           <p id="attorney-text" class="section-text"><?php the_field( 'attorney_text' ) ?></p>
@@ -52,6 +53,7 @@
         <div class="attorney-pic">
           <img src="<?php the_field( 'attorney_pic' ) ?>" alt="<?php the_field( 'attorney_title' ) ?>">
         </div>
+      </div>
     </section>
     <section class="results-section">
       <div class="results-pic">
@@ -83,10 +85,12 @@
         <p id="vets-text" class="section-text">We fight for those who fought for our freedom. For a veterans disability lawyer in New Orleans, consider Ascend Disability Lawyers. We know how to obtain the necessary evidence to establish a service connection and a fair disability rating.</p>
       </div>
     </section>
-    <section class="calltoaction">
-      <div id="calltoaction2" class="container">
-          <h3>READY TO SCHEDULE YOUR <span id="orange">FREE</span> CONSULTATION? CALL <span id="orange">(855) 631-2544</span></h3>
-          <button id="gethelpbutton" type="button" name="gethelpnow">Get Help Now</button>
+    <section>
+      <div class="container">
+        <div id="calltoaction2" class="calltoaction">
+            <h3>READY TO SCHEDULE YOUR <span id="orange">FREE</span> CONSULTATION? CALL <span id="orange">(855) 631-2544</span></h3>
+            <button id="gethelpbutton" type="button" name="gethelpnow">Get Help Now</button>
+        </div>
       </div>
     </section>
     <section>
