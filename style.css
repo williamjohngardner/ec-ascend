@@ -327,6 +327,7 @@ button {
   background-color: rgba(48,152,213, 1);
   padding: 20px;
   margin: 0;
+  clear:both;
 }
 
 .calltoaction h3 {
