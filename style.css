@@ -541,7 +541,11 @@ button {
 .pre-footer-column-1 li {
    font-family: 'Oswald', sans-serif;
    color: #ffffff;
-   list-style-type: none;"
+   list-style-type: none;
+}
+
+.pre-footer-column-1 ul {
+   padding-left: 0;
 }
 
 .pre-footer-column-2 {

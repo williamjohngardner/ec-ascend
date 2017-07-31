@@ -87,8 +87,6 @@
       <div class="container">
         <div id="calltoaction2">
             <h3><?php the_field( 'cta_white_1' ) ?> <span class="orange"><?php the_field( 'cta_orange_1' ) ?></span> <?php the_field( 'cta_white_2' ) ?> <span class="orange"><?php the_field( 'cta_orange_2' ) ?></span></h3>
-
-              <!-- <button id="gethelpbutton" type="button" name="gethelpnow"><?php the_field( 'cta_button_text' ) ?></button> -->
               <a id="gethelpbutton" class="calltoaction-button" href="<?php the_field( 'cta_button_url' ) ?>"><?php the_field( 'cta_button_text' ) ?></a>
         </div>
       </div>
@@ -109,7 +107,7 @@
           <h2 id="success-title" class="section-title"><?php the_field( 'success_title_white' ) ?> <span class="orange"><?php the_field( 'success_title_orange' ) ?></span></h2>
           <hr>
           <p id="success-text" class="section-text"><?php the_field( 'success_description' ) ?></p>
-          <h3 id="success-button" class="calltoaction-button">Learn More</h3>
+          <a href="<?php the_field( 'success_button_url' ) ?>"><h3 id="success-button" class="calltoaction-button"><?php the_field( 'success_button_text' ) ?></h3></a>
         </div>
       </div>
     </section>

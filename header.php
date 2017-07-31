@@ -6,7 +6,8 @@
 
     <?php wp_head(); ?>
     <script src="https://use.fontawesome.com/7978a0b803.js"></script>
-    <link rel="icon" href="<?php bloginfo( 'template_directory' ) ?>/images/faviocon.png" type="image/gif">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<?php the_field( 'google_maps_api_key' ) ?>"></script>
+    <link rel="icon" href="<?php the_field( 'favicon' ) ?>" type="image/gif">
   </head>
   <body <?php body_class(); ?>>
     <section class="hero-section">

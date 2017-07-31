@@ -42,6 +42,15 @@ function ecascend_theme_styles(){
 add_action( 'wp_enqueue_scripts', 'ecascend_theme_styles' );
 
 
+function nr_load_scripts() {
+
+	wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAq4eZiz6tdsKPSyS8jbuLvCF4jZndwIuo',null,null,true);  
+	wp_enqueue_script('googlemaps');
+
+}
+add_action( 'wp_enqueue_scripts', 'nr_load_scripts' );
+
+
 function esascend_theme_js() {
 
   wp_enqueue_style('font-awesome', '//use.fontawesome.com/7978a0b803.js');

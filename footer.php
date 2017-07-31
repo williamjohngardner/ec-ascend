@@ -1,7 +1,9 @@
 <section class="calltoaction">
-  <div id="calltoaction" class="container">
-      <h3>READY TO SCHEDULE YOUR <span class="orange">FREE</span> CONSULTATION? <br>CALL <span class="orange">(855) 631-2544</span> OR</h3>
-      <button id="gethelpbutton" type="button" name="gethelpnow">Get Help Now</button>
+  <div class="container">
+    <div id="calltoaction2">
+        <h3><?php the_field( 'cta_white_1' ) ?> <span class="orange"><?php the_field( 'cta_orange_1' ) ?></span> <?php the_field( 'cta_white_2' ) ?> <span class="orange"><?php the_field( 'cta_orange_2' ) ?></span></h3>
+          <a id="gethelpbutton" class="calltoaction-button" href="<?php the_field( 'cta_button_url' ) ?>"><?php the_field( 'cta_button_text' ) ?></a>
+    </div>
   </div>
 </section>
 <section class="pre-footer-columns">
@@ -19,13 +21,6 @@
             <li>Toll Free:<a style="color: white;" href="tel:<?php the_field( 'toll_free_phone_raw' ) ?>"><?php the_field( 'toll_free_phone' ) ?></a></li>
             <li>Ph:<a href="tel:<?php the_field('tel_area_code') ?><?php the_field('tel_exchange') ?><?php the_field('tel_line_number') ?>">(<?php the_field('tel_area_code') ?>) <?php the_field('tel_exchange') ?>-<?php the_field('tel_line_number') ?></a></li>
           </ul>
-          <br>
-          <ul>
-            <li>Mailing Address:</li>
-            <li>5500 Prytania Street, #421</li>
-            <li>New Orleans, LA 70115</li>
-          </ul>
-          <br>
           <ul>
             <li><a href="https://www.facebook.com/pages/Ascend-Disability-Lawyers-LLC/445889835504828" target="_blank" rel="noopener"><img src="https://ascenddis.wpengine.com/wp-content/uploads/2017/04/fb.png" alt="Facebook" /></a><a href="https://twitter.com/AscendLawyers" target="_blank" rel="noopener"><img src="https://ascenddis.wpengine.com/wp-content/uploads/2017/04/twt.png" alt="Twitter" /></a></li>
           </ul>
@@ -33,28 +28,26 @@
       </div>
       <div class="col-sm-4">
         <div class="pre-footer-column-2">
-          <h3><span class="orange">CONTACT</span> US</h3>
+          <h3><span class="orange"><?php the_field( 'cfc_title_orange' ) ?></span> <?php the_field( 'cfc_title_white' ) ?></h3>
           <br>
-          <div class="footer-contact-form">
+          <?php the_field( 'cfc_shortcode' ) ?>
+          <!-- <div class="footer-contact-form">
             <input type="text" name="yourname" value="" placeholder="Your Name">
             <input type="text" name="youremail" value="" placeholder="Your Email">
             <input type="text" name="yourphone" value="" placeholder="Your Phone">
             <input type="text" name="yourage" value="" placeholder="How Old are You?">
             <br>
             <h3 id="footer-contact-button" class="calltoaction-button">Free Consultation</h3>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-sm-4">
         <div class="pre-footer-column-3">
-          <h3><span class="orange">Find</span> Us</h3>
+          <h3><span class="orange"><?php the_field( 'rfc_title_orange' ) ?></span> <?php the_field( 'rfc_title_white' ) ?></h3>
           <br>
           <div class="mapoverlay"></div>
-          <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13829.36273190411!2d-90.1287505!3d29.9408778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x581a675b208a9dd3!2sAscend+Disability+Lawyers!5e0!3m2!1sen!2sus!4v1495819298398" width="300" height="338" frameborder="0" allowfullscreen=""></iframe>
-          <br>
-          <a href="http://www.bbb.org/new-orleans/business-reviews/attorneys-and-lawyers/ascend-disability-lawyers-llc-in-new-orleans-la-90006410/#sealclick" target="_blank" rel="nofollow noopener"><img style="border: 0;" src="http://seal-neworleans.bbb.org/seals/blue-seal-293-61-whitetxt-bbb-90006410.png" alt="Ascend Disability Lawyers, LLC BBB Business Review" /></a>
-          <br>
-          <a href="http://www.nosscr.org"><img style="max-width: 180px;" src="http://nosscr.org/sites/all/themes/nosscr2/images/logo.png" alt="Click to visit the NOSSCR web site" border="0" /></a>
+          <?php the_field( 'rfc_map' ) ?>
+          <!-- <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13829.36273190411!2d-90.1287505!3d29.9408778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x581a675b208a9dd3!2sAscend+Disability+Lawyers!5e0!3m2!1sen!2sus!4v1495819298398" width="300" height="338" frameborder="0" allowfullscreen=""></iframe> -->
         </div>
       </div>
     </div>
