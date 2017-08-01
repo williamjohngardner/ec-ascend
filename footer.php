@@ -46,7 +46,7 @@
           <h3><span class="orange"><?php the_field( 'rfc_title_orange' ) ?></span> <?php the_field( 'rfc_title_white' ) ?></h3>
           <br>
           <div class="mapoverlay"></div>
-          <?php the_field( 'rfc_map' ) ?>
+          <?php the_field( 'map_iframe' ) ?>
           <!-- <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13829.36273190411!2d-90.1287505!3d29.9408778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x581a675b208a9dd3!2sAscend+Disability+Lawyers!5e0!3m2!1sen!2sus!4v1495819298398" width="300" height="338" frameborder="0" allowfullscreen=""></iframe> -->
         </div>
       </div>
@@ -55,9 +55,9 @@
 </section>
 <footer>
   <div id="disclaimer" class="container">
-    <h4>Privacy Policy</h4>
+    <h4><?php the_field( 'disclaimer_title' ) ?></h4>
     <hr>
-    <p>This website is designed for general information only and should not be construed as legal advice. An attorney-client relationship should not be construed as having been formed by the use of this website, the submission of information to our firm, or otherwise contacting our firm. The choice of a lawyer is an important decision and should not be based solely on advertisements. Past results afford no guarantee of future results. Every case must be judged on its own merits.</p>
+    <p><?php the_field( 'disclaimer' ) ?></p>
     <br>
     <hr>
     <h5>&copy;<?php echo date('Y'); ?> | Powered by <a href="http://www.everconvert.com">EverConvert</a></h5>

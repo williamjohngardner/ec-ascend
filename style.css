@@ -569,6 +569,19 @@ button {
   margin-top: 10px;
 }
 
+.pre-footer-column-2 textarea {
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+  width: 260px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+#form-submit {
+  background-color: #febb63 !important;
+  margin-bottom: 30px;
+}
+
 #footer-contact-button {
   width: 260px;
   margin-top: 25px;
@@ -616,6 +629,7 @@ footer {
 }
 
 #disclaimer p {
+  color: #fff;
   font-family: 'PT Sans', sans-serif;
   font-weight: 200;
   font-size: 12px;

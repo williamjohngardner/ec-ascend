@@ -25,5 +25,5 @@
       <?php endif; ?>
         <?php get_sidebar( 'blog' ); ?>
     </div>
-  </div>
+  </div> 
 <?php get_footer() ?>
