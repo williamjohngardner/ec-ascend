@@ -685,6 +685,10 @@ footer {
 8.0 -  SIDEBAR
 --------------------------------------------------------------*/
 
+.sidebar {
+  clear: both;
+}
+
 .widget {
   margin-top: 75px;
 }

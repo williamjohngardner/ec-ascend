@@ -25,7 +25,9 @@
       <?php endwhile; else : ?>
       	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
-        <?php get_sidebar( 'blog' ); ?>
+        <div class="sidebar">
+          <?php get_sidebar( 'blog' ); ?>
+        </div>
       </div>
     </div>
 <?php get_footer() ?>
