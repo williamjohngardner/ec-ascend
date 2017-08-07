@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <div class="interior_page_header_image">
-  <img src="<?php bloginfo('template_directory') ?>/images/bridge2_header.jpg" alt=" <?php bloginfo( 'name' ) ?>">
+  <img src="<?php the_field('interior_hero_image') ?>" alt="<?php bloginfo( 'name' ) ?>">
 </div>
 
 <div class="interior_page_header">

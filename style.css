@@ -686,7 +686,15 @@ footer {
 --------------------------------------------------------------*/
 
 .sidebar {
-  clear: both;
+  clear: right;
+}
+
+.sidebar li {
+  list-style-type: none;
+}
+
+.sidebar li a:hover {
+  color: #1373a6
 }
 
 .widget {
@@ -699,6 +707,7 @@ footer {
 
 .widget li {
   margin-top: 20px;
+
 }
 
 .widget h2 {
