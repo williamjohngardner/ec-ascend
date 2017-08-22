@@ -230,6 +230,14 @@ header {
   z-index: -1
 }
 
+.mobile_header_image {
+  display: none;
+}
+
+.homepage_header_image > img {
+  background-position: center;
+}
+
 .header-center img {
   padding-top: 10px;
 }
@@ -288,6 +296,10 @@ button {
 
 .hero-link-section {
   margin-top: 65px;
+}
+
+.hero-link-mobile {
+  display: none;
 }
 
 .hero-link {
@@ -364,6 +376,10 @@ button {
   width: 45%;
 }
 
+.attorney-pic-mobile {
+  display: none;
+}
+
 #attorney-title {
   margin: 50px 0 50px 0;
   color: #1373a6;
@@ -386,6 +402,11 @@ button {
 .results-pic {
   float: left;
   width: 45%;
+  background-color:#0d72c7;
+}
+
+.results-pic-mobile {
+  display: none;
 }
 
 .results-desc {
@@ -421,6 +442,10 @@ button {
   background-color: #fff;
 }
 
+.team-pic-mobile {
+  display: none;
+}
+
 .team-pic {
   float: right;
   width: 45%;
@@ -449,6 +474,11 @@ button {
 .vets-pic {
   float: left;
   width: 45%;
+  background-color:#0d72c7;
+}
+
+.vets-pic-mobile {
+  display: none;
 }
 
 .vets-desc {
@@ -478,6 +508,10 @@ button {
 .success-bkgrnd-img {
   position: absolute;
   z-index: -1
+}
+
+.success-bkgrnd-img-mobile {
+  display: none;
 }
 
 .success {
@@ -661,7 +695,7 @@ footer {
 }
 
 .interior_page_header_image {
-  height: 308px;
+  height: 339px;
 }
 
 .interior_page_header_image img {
@@ -671,7 +705,28 @@ footer {
 }
 
 .interior_page_content {
-  padding: 75px;
+  padding: 70px;
+}
+
+.interior_page_content p {
+  line-height: 1.5em;
+}
+
+.interior_page_content h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  line-height: 1.2em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.interior_page_content h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .interior_page_content h4 {
@@ -679,6 +734,20 @@ footer {
   font-size: 1.2em;
   line-height: 1.2em;
   font-weight: 500;
+}
+
+.interior_page_content ul, .interior_page_content ol {
+  list-style-type: circle;
+  line-height: 1.25em;
+  margin-top: 10px;
+}
+
+.interior_page_content li {
+  margin-bottom: 5px;
+}
+
+.interior_page_content a {
+  color: #337ab7 !important;
 }
 
 /*--------------------------------------------------------------
@@ -743,4 +812,260 @@ footer {
 
 .blog_page_subtext {
   font-size: 1em;
+}
+
+/*--------------------------------------------------------------
+10.0 - Menu Dropdown Styling
+--------------------------------------------------------------*/
+
+#cssmenu ul li.has-sub:hover > a:after {
+	top: 0;
+	bottom: 0;
+}
+#cssmenu > ul > li.has-sub > a:before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	right: 6px;
+	border: 5px solid transparent;
+	border-top: 5px solid #ffffff;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+	top: 19px;
+}
+#cssmenu ul li.has-sub:hover > a {
+	/*background: #fff;*/
+	border-color: #333;
+	padding-bottom: 13px;
+	padding-top: 13px;
+	top: -1px;
+	z-index: 999;
+}
+#cssmenu ul li.has-sub:hover > ul,
+#cssmenu ul li.has-sub:hover > div {
+	display: block;
+}
+
+#cssmenu ul li > ul,
+#cssmenu ul li > div {
+	display: none;
+	width: auto;
+	position: absolute;
+	top: 166px;
+	padding: 10px 0;
+	background: #fff;
+  border: solid 1px #333;
+	z-index: 999;
+}
+#cssmenu ul li > ul {
+	width: 300px;
+}
+#cssmenu ul li > ul li {
+	display: block;
+	list-style: inside none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#cssmenu ul li > ul li a {
+	outline: none;
+	display: block;
+	position: relative;
+  text-align: left;
+	margin: 0;
+	padding: 8px 20px;
+  font-family:'Oswald', sans-serif;
+  font-size: .65em;
+  text-transform: uppercase;
+	color: #333;
+	text-decoration: none;
+}
+#cssmenu ul ul a:hover {
+	color: #91d6f7;
+}
+#cssmenu > ul > li.has-sub > a:hover:before {
+	border-top: 5px solid #ffffff;
+}
+
+/*--------------------------------------------------------------
+11.0 - Mobile Response
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+
+    .homepage_header_image {
+      display: none;
+    }
+
+    .mobile_header_image {
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: -1
+    }
+
+    .interior_page_header_image {
+      height: 418px;
+    }
+
+    .pre-footer-column-1, .pre-footer-column-2, .pre-footer-column-3{
+      margin-left: 10%;
+    }
+
+    .interior_page_content {
+      padding: 50px;
+    }
+
+    .hero-link-mobile ul {
+      padding-left: 0;
+    }
+
+    .hero-link-mobile {
+      padding-bottom: 20px;
+      display: block;
+      background-color: rgba(113,171,202, 1);
+      padding: 10px;
+      text-align: center;
+    }
+
+    .hero-link-mobile h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.25em;
+      margin-bottom: 10px;
+    }
+
+    .hero-link-mobile i {
+      color: #fff;
+      background-color: #1373a6;
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      padding-top: 15px;
+      margin-top: -80px;
+      margin-bottom: 10px;
+    }
+
+    .hero-link {
+      display: none;
+    }
+
+    .attorney-desc {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    .attorney-pic {
+      display: none;
+    }
+
+    .attorney-pic-mobile {
+      display: block;
+    }
+
+    .attorney-pic-mobile img {
+      width: 100%;
+      height: auto;
+    }
+
+    #attorney-button {
+      float: none;
+      margin-top: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #attorney-title {
+      text-align: center;
+    }
+
+    #attorney-text {
+      margin-left: 0;
+    }
+
+    .results-pic {
+      display: none;
+    }
+
+    .results-pic-mobile {
+      display: block;
+    }
+
+    .results-pic-mobile img {
+      width: 100%;
+      height: auto;
+    }
+
+    .results-desc {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    #results-title {
+      text-align: center;
+    }
+
+    .team-desc {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    .team-pic {
+      display: none;
+    }
+
+    .team-pic-mobile img {
+      width: 100%;
+    }
+
+    .team-pic-mobile {
+      display: block;
+    }
+
+    #team-button {
+      float: none;
+      margin-top: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .vets-pic {
+      display: none;
+    }
+
+    .vets-pic-mobile {
+      display: block;
+    }
+
+    .vets-pic-mobile img {
+      width: 100%;
+    }
+
+    .vets-desc {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    .success-bkgrnd-img-mobile {
+      display: block;
+      position: absolute;
+      z-index: -1
+    }
+
+    .success-bkgrnd-img {
+      display: none;
+    }
+
+    #success-text {
+      height: 300px;
+      overflow: scroll;
+    }
 }

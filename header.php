@@ -11,7 +11,7 @@
   </head>
   <body <?php body_class(); ?>>
     <section class="hero-section">
-      <header>
+      <header class="site-header">
         <div class="container">
           <div class="col-sm-4"></div>
           <div class="col-sm-4">
@@ -32,9 +32,12 @@
         <?php
 
           $defaults = array(
-            'container' => false,
+            // 'container' => true,
             'theme_location' => 'main-menu',
             'menu_class' => 'main-menu',
+            'menu' => 'Main Menu',
+            'container_id' => 'cssmenu',
+            'walker' => new CSS_Menu_Walker()
           );
 
           wp_nav_menu( $defaults );

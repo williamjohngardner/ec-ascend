@@ -2,6 +2,9 @@
   <div class="homepage_header_image">
     <img src="<?php the_field( 'hero_image' ) ?>" alt=" <?php bloginfo( 'name' ) ?> ">
   </div>
+  <div class="mobile_header_image">
+    <img src="<?php the_field( 'hero_mobile_image' ) ?>" alt=" <?php bloginfo( 'name' ) ?> ">
+  </div>
       <div class="hero-title">
         <h1><?php the_field( 'tagline' ) ?></h1>
       </div>
@@ -34,6 +37,13 @@
             <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
           </ul>
         </div>
+        <div class="col-sm-3 hero-link-mobile">
+          <ul>
+            <li><i class="fa fa-pagelines fa-3x"></i></li>
+            <li><h3><?php the_field( 'hero_link_1' ) ?></h3></li>
+            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
+          </ul>
+        </div>
       </div>
       <br>
     </section>
@@ -53,6 +63,9 @@
         <div class="attorney-pic">
           <img src="<?php the_field( 'attorney_pic' ) ?>" alt="<?php the_field( 'attorney_title' ) ?>">
         </div>
+        <div class="attorney-pic-mobile">
+          <img src="<?php the_field( 'attorney_pic_mobile' ) ?>" alt="<?php the_field( 'attorney_title' ) ?>">
+        </div>
       </div>
     </section>
     <section class="results-section">
@@ -62,6 +75,9 @@
       <div class="results-desc">
         <h2 id="results-title" class="section-title"><?php the_field( 'results_title_white_1' ) ?> <span class="orange"><?php the_field( 'results_title_orange' ) ?> </span><?php the_field( 'results_title_white_2' ) ?></h2>
         <p id="results-text" class="section-text"><?php the_field( 'results_description' ) ?></p>
+      </div>
+      <div class="results-pic-mobile">
+        <img src="<?php the_field('results_pic_mobile'); ?>" alt="<?php the_field( 'attorney_title' ) ?>">
       </div>
     </section>
     <section class="team-section">
@@ -73,6 +89,9 @@
         <div class="team-pic">
           <img src="<?php the_field('team_pic'); ?>" alt="<?php the_field( 'attorney_title' ) ?>">
         </div>
+        <div class="team-pic-mobile">
+          <img src="<?php the_field('team_pic_mobile'); ?>" alt="<?php the_field( 'attorney_title' ) ?>">
+        </div>
     </section>
     <section class="vets-section">
       <div class="vets-pic">
@@ -81,6 +100,9 @@
       <div class="vets-desc">
         <h2 id="vets-title" class="section-title"><?php the_field( 'vet_title_white_1' ) ?> <span class="orange"><?php the_field( 'vet_title_orange' ) ?></span> <?php the_field( 'vet_title_white_2' ) ?></h2>
         <p id="vets-text" class="section-text"><?php the_field( 'vet_description' ) ?></p>
+      </div>
+      <div class="vets-pic-mobile">
+        <img src="<?php the_field('vet_pic_mobile'); ?>" alt="<?php the_field( 'attorney_title' ) ?>">
       </div>
     </section>
     <section class="calltoaction">
@@ -94,6 +116,9 @@
     <section>
       <div class="success-bkgrnd-img">
         <img src="<?php the_field( 'success_bkgnd_img' ) ?>" alt="<?php bloginfo( 'name' )?>">
+      </div>
+      <div class="success-bkgrnd-img-mobile">
+        <img src="<?php the_field( 'success_bkgnd_img_mobile' ) ?>" alt="<?php bloginfo( 'name' )?>">
       </div>
       <div class="success">
         <br>
