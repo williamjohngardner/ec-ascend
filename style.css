@@ -265,6 +265,12 @@ button {
   text-transform: uppercase;
 }
 
+.shiftnav-toggle-button {
+  background-color: #1373a6 !important;
+  padding: 5px 20px !important;
+  font-size: 1.35em !important;
+}
+
 /* 2.1 - MAIN MENU STYLING */
 
 .main-menu {
@@ -612,8 +618,9 @@ button {
 }
 
 #form-submit {
-  background-color: #febb63 !important;
+  background-color: #febb63;
   margin-bottom: 30px;
+  width: 100
 }
 
 #footer-contact-button {
@@ -888,10 +895,58 @@ footer {
 }
 
 /*--------------------------------------------------------------
-11.0 - Mobile Response
+11.0 - Contact Forms
+--------------------------------------------------------------*/
+#input-2 {
+  color: #333;
+  height: 40px;
+  width: 100%;
+  background-color: #fff;
+  padding-left: 5px;
+  font-family:'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+#text-area-2 {
+  color: #333;
+  height: 120px;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-family:'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+#form-submit-2 {
+  height: 40px;
+  background-color: #febb63;
+  margin-bottom: 30px;
+  width: 100%;
+  color: #333;
+  border: none;
+  font-family:'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+12.0 - Mobile Response
 --------------------------------------------------------------*/
 
-@media only screen and (max-width: 500px) {
+#casereview {
+  background-color: none !important;
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-link-section {
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
 
     .homepage_header_image {
       display: none;
@@ -1067,5 +1122,9 @@ footer {
     #success-text {
       height: 300px;
       overflow: scroll;
+    }
+
+    #calltoaction2 {
+      font-size: .75em;
     }
 }

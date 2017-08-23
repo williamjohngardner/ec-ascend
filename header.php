@@ -22,7 +22,7 @@
           <div class="col-sm-4">
             <div class="header-right">
               <h2><a href="tel:<?php the_field('tel_area_code') ?><?php the_field('tel_exchange') ?><?php the_field('tel_line_number') ?>">(<?php the_field('tel_area_code') ?>) <?php the_field('tel_exchange') ?>-<?php the_field('tel_line_number') ?></a></h2>
-              <button type="button" name="freeconsult">Free Consultation</button>
+              <button  class="shiftnav-toggle shiftnav-toggle-button" data-shiftnav-target="contact_flyout" type="button" name="freeconsult">Free Consultation</button>
             </div>
           </div>
         </div>
