@@ -13,35 +13,35 @@
           <ul>
             <li><i class="fa fa-pagelines fa-3x"></i></li>
             <li><h3><?php the_field( 'hero_link_1' ) ?></h3></li>
-            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
+            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-question fa-3x" aria-hidden="true"></i></li>
             <li><h3><?php the_field( 'hero_link_2' ) ?></h3></li>
-            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
+            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-university fa-3x" aria-hidden="true"></i></li>
             <li><h3><?php the_field( 'hero_link_3' ) ?></h3></li>
-            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
+            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-gavel fa-3x" aria-hidden="true"></i></li>
             <li><h3><?php the_field( 'hero_link_4' ) ?></h3></li>
-            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
+            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link-mobile">
           <ul>
             <li><i class="fa fa-pagelines fa-3x"></i></li>
             <li><h3><?php the_field( 'hero_link_1' ) ?></h3></li>
-            <li><button type="button" name="herobutton1"><?php the_field( 'hero_link_button' ) ?></button></li>
+            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
       </div>
@@ -108,8 +108,8 @@
     <section class="calltoaction">
       <div class="container">
         <div id="calltoaction2">
-            <h3><?php the_field( 'cta_white_1' ) ?> <span class="orange"><?php the_field( 'cta_orange_1' ) ?></span> <?php the_field( 'cta_white_2' ) ?> <span class="orange"><?php the_field( 'cta_orange_2' ) ?></span></h3>
-              <a id="gethelpbutton" class="calltoaction-button" href="<?php the_field( 'cta_button_url' ) ?>"><?php the_field( 'cta_button_text' ) ?></a>
+            <h3><?php the_field( 'cta_white_1' ) ?> <span class="orange"><?php the_field( 'cta_orange_1' ) ?></span> <?php the_field( 'cta_white_2' ) ?> <a href="tel:<?php the_field('tel_area_code') ?><?php the_field('tel_exchange') ?><?php the_field('tel_line_number') ?>"><span class="orange">(<?php the_field('tel_area_code') ?>) <?php the_field('tel_exchange') ?>-<?php the_field('tel_line_number') ?></span></a></h3>
+            <button id="gethelpbutton" class="shiftnav-toggle shiftnav-toggle-button" data-shiftnav-target="contact_flyout" type="button" name="freeconsult"><?php the_field( 'cta_button_text' ) ?></button>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
   <div class="container">
     <div id="calltoaction2">
         <h3><?php the_field( 'cta_white_1' ) ?> <span class="orange"><?php the_field( 'cta_orange_1' ) ?></span> <?php the_field( 'cta_white_2' ) ?> <span class="orange"><?php the_field( 'cta_orange_2' ) ?></span></h3>
-          <a id="gethelpbutton" class="calltoaction-button" href="<?php the_field( 'cta_button_url' ) ?>"><?php the_field( 'cta_button_text' ) ?></a>
+        <button id="gethelpbutton" class="shiftnav-toggle shiftnav-toggle-button" data-shiftnav-target="contact_flyout" type="button" name="freeconsult"><?php the_field( 'cta_button_text' ) ?></button>
     </div>
   </div>
 </section>
@@ -31,14 +31,6 @@
           <h3><span class="orange"><?php the_field( 'cfc_title_orange' ) ?></span> <?php the_field( 'cfc_title_white' ) ?></h3>
           <br>
           <?php the_field( 'cfc_shortcode' ) ?>
-          <!-- <div class="footer-contact-form">
-            <input type="text" name="yourname" value="" placeholder="Your Name">
-            <input type="text" name="youremail" value="" placeholder="Your Email">
-            <input type="text" name="yourphone" value="" placeholder="Your Phone">
-            <input type="text" name="yourage" value="" placeholder="How Old are You?">
-            <br>
-            <h3 id="footer-contact-button" class="calltoaction-button">Free Consultation</h3>
-          </div> -->
         </div>
       </div>
       <div class="col-sm-4">
