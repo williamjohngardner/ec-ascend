@@ -1,7 +1,7 @@
 <section class="calltoaction">
   <div class="container">
     <div id="calltoaction2">
-        <h3><?php the_field( 'cta_white_1' ) ?> <span class="orange"><?php the_field( 'cta_orange_1' ) ?></span> <?php the_field( 'cta_white_2' ) ?> <span class="orange"><?php the_field( 'cta_orange_2' ) ?></span></h3>
+        <h3><?php the_field( 'cta_white_1' ) ?> <span class="orange"><?php the_field( 'cta_orange_1' ) ?></span> <?php the_field( 'cta_white_2' ) ?> <a href="tel:<?php the_field('tel_area_code') ?><?php the_field('tel_exchange') ?><?php the_field('tel_line_number') ?>"><span class="orange">(<?php the_field('tel_area_code') ?>) <?php the_field('tel_exchange') ?>-<?php the_field('tel_line_number') ?></span></a></h3>
         <button id="gethelpbutton" class="shiftnav-toggle shiftnav-toggle-button" data-shiftnav-target="contact_flyout" type="button" name="freeconsult"><?php the_field( 'cta_button_text' ) ?></button>
     </div>
   </div>

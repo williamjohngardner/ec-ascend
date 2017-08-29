@@ -2,6 +2,9 @@
 <div class="interior_page_header_image">
   <img src="<?php the_field('interior_hero_image') ?>" alt="<?php bloginfo( 'name' ) ?>">
 </div>
+<div class="interior_page_header_image_mobile">
+  <img src="<?php the_field('interior_hero_image_mobile') ?>" alt="<?php bloginfo( 'name' ) ?>">
+</div>
 
 <div class="interior_page_header">
   <h1><?php the_title() ?></h1>

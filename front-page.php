@@ -37,7 +37,7 @@
             <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
-        <div class="col-sm-3 hero-link-mobile">
+        <div class="col-sm-12 hero-link-mobile">
           <ul>
             <li><i class="fa fa-pagelines fa-3x"></i></li>
             <li><h3><?php the_field( 'hero_link_1' ) ?></h3></li>

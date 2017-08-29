@@ -716,6 +716,10 @@ footer {
   height: 339px;
 }
 
+.interior_page_header_image_mobile {
+  display: none;
+}
+
 .interior_page_header_image img {
   position: absolute;
   top: 0;
@@ -840,13 +844,13 @@ footer {
 	top: 0;
 	bottom: 0;
 }
-#cssmenu > ul > li.has-sub > a:before {
+/*#cssmenu > ul > li.has-sub > a:before {
 	content: '';
 	position: absolute;
 	top: 18px;
 	right: 6px;
 	border: 5px solid transparent;
-	border-top: 5px solid #ffffff;
+	border-top: 5px solid #ffffff;*/
 }
 #cssmenu > ul > li.has-sub:hover > a:before {
 	top: 19px;
@@ -869,7 +873,7 @@ footer {
 	display: none;
 	width: auto;
 	position: absolute;
-	top: 166px;
+	top: 164px;
 	padding: 10px 0;
 	background: #fff;
   border: solid 1px #333;
@@ -957,221 +961,276 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1060px) {
+  .interior_page_header_image {
+    height: 422px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-link {
+    display: none;
+  }
+
+  .hero-link-mobile ul {
+    padding-left: 0;
+  }
+
+  .hero-link-mobile {
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(113,171,202, 1);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero-link-mobile h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.25em;
+    margin-bottom: 10px;
+  }
+
+  .hero-link-mobile i {
+    color: #fff;
+    background-color: #1373a6;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    padding-top: 15px;
+    margin-top: -80px;
+    margin-bottom: 10px;
+  }
+
+}
+
 @media only screen and (max-width: 420px) {
 
-    .homepage_header_image {
-      display: none;
-    }
+  .homepage_header_image {
+    display: none;
+  }
 
-    .mobile_header_image {
-      display: block;
-      position: absolute;
-      top: 0;
-      z-index: -1
-    }
+  .interior_page_header_image {
+    display: none;
+  }
 
-    .interior_page_header_image {
-      height: 418px;
-    }
+  .interior_page_header_image_mobile {
+    display: block;
+  }
 
-    .pre-footer-column-1, .pre-footer-column-2, .pre-footer-column-3{
-      margin-left: 10%;
-    }
+  .mobile_header_image {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: -1
+  }
 
-    .interior_page_content {
-      padding: 50px;
-    }
+  .interior_page_header_image {
+    height: 418px;
+  }
 
-    .hero-link-mobile ul {
-      padding-left: 0;
-    }
+  .pre-footer-column-1, .pre-footer-column-2, .pre-footer-column-3{
+    margin-left: 10%;
+  }
 
-    .hero-link-mobile {
-      padding-bottom: 20px;
-      display: block;
-      background-color: rgba(113,171,202, 1);
-      padding: 10px;
-      text-align: center;
-    }
+  .interior_page_content {
+    padding: 50px;
+  }
 
-    .hero-link-mobile h3 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.5em;
-      font-weight: 500;
-      color: #fff;
-      line-height: 1.25em;
-      margin-bottom: 10px;
-    }
+  .hero-link-mobile ul {
+    padding-left: 0;
+  }
 
-    .hero-link-mobile i {
-      color: #fff;
-      background-color: #1373a6;
-      width: 80px;
-      height: 80px;
-      border-radius: 40px;
-      padding-top: 15px;
-      margin-top: -80px;
-      margin-bottom: 10px;
-    }
+  .hero-link-mobile {
+    padding-bottom: 20px;
+    display: block;
+    background-color: rgba(113,171,202, 1);
+    padding: 10px;
+    text-align: center;
+  }
 
-    .hero-link {
-      display: none;
-    }
+  .hero-link-mobile h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.25em;
+    margin-bottom: 10px;
+  }
 
-    .attorney-desc {
-      width: 100%;
-      float: none;
-      text-align: center;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
+  .hero-link-mobile i {
+    color: #fff;
+    background-color: #1373a6;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    padding-top: 15px;
+    margin-top: -80px;
+    margin-bottom: 10px;
+  }
 
-    .attorney-pic {
-      display: none;
-    }
+  .hero-link {
+    display: none;
+  }
 
-    .attorney-pic-mobile {
-      display: block;
-    }
+  .attorney-desc {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    .attorney-pic-mobile img {
-      width: 100%;
-      height: auto;
-      clear: both;
-    }
+  .attorney-pic {
+    display: none;
+  }
 
-    #attorney-button {
-      float: none;
-      margin-top: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .attorney-pic-mobile {
+    display: block;
+  }
 
-    #attorney-title {
-      text-align: center;
-      font-size: 1.75em;
-    }
+  .attorney-pic-mobile img {
+    width: 100%;
+    height: auto;
+    clear: both;
+  }
+
+  #attorney-button {
+    float: none;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #attorney-title {
+    text-align: center;
+    font-size: 1.75em;
+  }
 
 
-    #attorney-text {
-      margin-left: 0;
-    }
+  #attorney-text {
+    margin-left: 0;
+  }
 
-    .attorney-section {
-      clear: both;
-    }
+  .attorney-section {
+    clear: both;
+  }
 
-    .results-section {
-      clear: both;
-    }
+  .results-section {
+    clear: both;
+  }
 
-    .results-pic {
-      display: none;
-    }
+  .results-pic {
+    display: none;
+  }
 
-    .results-pic-mobile {
-      display: block;
-    }
+  .results-pic-mobile {
+    display: block;
+  }
 
-    .results-pic-mobile img {
-      width: 100%;
-      height: auto;
-    }
+  .results-pic-mobile img {
+    width: 100%;
+    height: auto;
+  }
 
-    .results-desc {
-      width: 100%;
-      float: none;
-      text-align: center;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
+  .results-desc {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    #results-title {
-      text-align: center;
-      margin-top: 0;
-      padding-top: 30px;
-    }
+  #results-title {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 30px;
+  }
 
-    .team-desc {
-      width: 100%;
-      float: none;
-      text-align: center;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
+  .team-desc {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    #team-text {
-      margin-left: 5px;
-    }
+  #team-text {
+    margin-left: 5px;
+  }
 
-    #team-title {
-      font-size: 1.75em;
-      margin-bottom: 20px;
-    }
+  #team-title {
+    font-size: 1.75em;
+    margin-bottom: 20px;
+  }
 
-    .team-pic {
-      display: none;
-    }
+  .team-pic {
+    display: none;
+  }
 
-    .team-pic-mobile img {
-      width: 100%;
-    }
+  .team-pic-mobile img {
+    width: 100%;
+  }
 
-    .team-pic-mobile {
-      display: block;
-    }
+  .team-pic-mobile {
+    display: block;
+  }
 
-    #team-button {
-      float: none;
-      margin-top: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  #team-button {
+    float: none;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    #vets-title {
-      margin-top: 0;
-      padding-top: 30px;
-      font-size: 1.75em;
-    }
+  #vets-title {
+    margin-top: 0;
+    padding-top: 30px;
+    font-size: 1.75em;
+  }
 
-    .vets-pic {
-      display: none;
-    }
+  .vets-pic {
+    display: none;
+  }
 
-    .vets-pic-mobile {
-      display: block;
-    }
+  .vets-pic-mobile {
+    display: block;
+  }
 
-    .vets-pic-mobile img {
-      width: 100%;
-    }
+  .vets-pic-mobile img {
+    width: 100%;
+  }
 
-    .vets-desc {
-      width: 100%;
-      float: none;
-      text-align: center;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
+  .vets-desc {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    .success-bkgrnd-img-mobile {
-      display: block;
-      position: absolute;
-      z-index: -1
-    }
+  .success-bkgrnd-img-mobile {
+    display: block;
+    position: absolute;
+    z-index: -1
+  }
 
-    .success-bkgrnd-img {
-      display: none;
-    }
+  .success-bkgrnd-img {
+    display: none;
+  }
 
-    #success-text {
-      height: 300px;
-      overflow: scroll;
-    }
+  #success-text {
+    height: 300px;
+    overflow: scroll;
+  }
 
-    #calltoaction2 {
-      font-size: .75em;
-    }
+  #calltoaction2 {
+    font-size: .75em;
+  }
 }
