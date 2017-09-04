@@ -955,13 +955,13 @@ footer {
   padding: 0 !important;
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .hero-link-section {
     margin-top: 35px;
   }
 }
 
-@media only screen and (max-width: 1060px) {
+@media screen and (max-width: 1060px) {
   .interior_page_header_image {
     height: 422px;
     width: 100%;
@@ -1008,7 +1008,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
 
   .homepage_header_image {
     display: none;
