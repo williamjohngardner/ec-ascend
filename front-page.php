@@ -13,35 +13,35 @@
           <ul>
             <li><i class="fa fa-pagelines fa-3x"></i></li>
             <li><h3><?php the_field( 'hero_link_1' ) ?></h3></li>
-            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
+            <li><a href="<?php the_field( 'hero_link_button_url_1' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-question fa-3x" aria-hidden="true"></i></li>
             <li><h3><?php the_field( 'hero_link_2' ) ?></h3></li>
-            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
+            <li><a href="<?php the_field( 'hero_link_button_url_2' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-university fa-3x" aria-hidden="true"></i></li>
             <li><h3><?php the_field( 'hero_link_3' ) ?></h3></li>
-            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
+            <li><a href="<?php the_field( 'hero_link_button_url_3' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
         <div class="col-sm-3 hero-link">
           <ul>
             <li><i class="fa fa-gavel fa-3x" aria-hidden="true"></i></li>
             <li><h3><?php the_field( 'hero_link_4' ) ?></h3></li>
-            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
+            <li><a href="<?php the_field( 'hero_link_button_url_4' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
         <div class="col-sm-12 hero-link-mobile">
           <ul>
             <li><i class="fa fa-pagelines fa-3x"></i></li>
             <li><h3><?php the_field( 'hero_link_1' ) ?></h3></li>
-            <li><a href="<?php the_field( 'hero_link_button_url' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
+            <li><a href="<?php the_field( 'hero_link_button_url_1' ) ?>"><h3 class="herobutton1"><?php the_field( 'hero_link_button' ) ?></h3></a></li>
           </ul>
         </div>
       </div>

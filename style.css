@@ -224,9 +224,12 @@ header {
   background-color: rgba(0,0,0,0.8);
 }
 
-.homepage_header_image {
+.homepage_header_image img {
   position: absolute;
   top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
   z-index: -1
 }
 
@@ -951,7 +954,7 @@ footer {
 --------------------------------------------------------------*/
 
 #casereview {
-  background-color: none !important;
+  /*background-color: none !important;*/
   padding: 0 !important;
 }
 
@@ -1008,33 +1011,55 @@ footer {
 
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
 
   .homepage_header_image {
     display: none;
   }
 
+  .hero-title {
+    font-size: 45px;
+}
+
   .interior_page_header_image {
     display: none;
+    height: 418px;
   }
 
   .interior_page_header_image_mobile {
     display: block;
   }
 
+  .interior_page_header_image_mobile img {
+    width: 100%;
+    height: auto;
+    clear: both;
+  }
+
   .mobile_header_image {
-    display: block;
-    position: absolute;
+    /*display: none;*/
+    /*position: absolute;
     top: 0;
-    z-index: -1
+    z-index: -1*/
   }
 
-  .interior_page_header_image {
-    height: 418px;
+  .hero-section {
+    background-image: url("/wp-content/uploads/2017/09/hero_mobile_opt.jpg");
+    background-repeat: no-repeat;
   }
 
-  .pre-footer-column-1, .pre-footer-column-2, .pre-footer-column-3{
+  body.page-template-default.page.page-id-752 .hero-section {
+    background-image: none;
+  }
+
+  .pre-footer-column-1, .pre-footer-column-2{
     margin-left: 10%;
+    float: none;
+  }
+
+  .pre-footer-column-3 {
+    margin-left: 8%;
+    float: none;
   }
 
   .interior_page_content {
@@ -1203,9 +1228,9 @@ footer {
     display: block;
   }
 
-  .vets-pic-mobile img {
+  /*.vets-pic-mobile img {
     width: 100%;
-  }
+  }*/
 
   .vets-desc {
     width: 100%;
@@ -1218,7 +1243,8 @@ footer {
   .success-bkgrnd-img-mobile {
     display: block;
     position: absolute;
-    z-index: -1
+    /*z-index: -1*/
+    width: 100%;
   }
 
   .success-bkgrnd-img {

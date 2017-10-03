@@ -1,6 +1,6 @@
 <section class="calltoaction">
   <div class="container">
-    <div id="calltoaction2">
+    <div class="footercta" id="calltoaction2">
         <h3><?php the_field( 'cta_white_1' ) ?> <span class="orange"><?php the_field( 'cta_orange_1' ) ?></span> <?php the_field( 'cta_white_2' ) ?> <a href="tel:<?php the_field('tel_area_code') ?><?php the_field('tel_exchange') ?><?php the_field('tel_line_number') ?>"><span class="orange">(<?php the_field('tel_area_code') ?>) <?php the_field('tel_exchange') ?>-<?php the_field('tel_line_number') ?></span></a></h3>
         <button id="gethelpbutton" class="shiftnav-toggle shiftnav-toggle-button" data-shiftnav-target="contact_flyout" type="button" name="freeconsult"><?php the_field( 'cta_button_text' ) ?></button>
     </div>
@@ -22,7 +22,8 @@
             <li>Ph:<a href="tel:<?php the_field('tel_area_code') ?><?php the_field('tel_exchange') ?><?php the_field('tel_line_number') ?>">(<?php the_field('tel_area_code') ?>) <?php the_field('tel_exchange') ?>-<?php the_field('tel_line_number') ?></a></li>
           </ul>
           <ul>
-            <li><a href="https://www.facebook.com/pages/Ascend-Disability-Lawyers-LLC/445889835504828" target="_blank" rel="noopener"><img src="https://ascenddis.wpengine.com/wp-content/uploads/2017/04/fb.png" alt="Facebook" /></a><a href="https://twitter.com/AscendLawyers" target="_blank" rel="noopener"><img src="https://ascenddis.wpengine.com/wp-content/uploads/2017/04/twt.png" alt="Twitter" /></a></li>
+            <li><a href="https://www.facebook.com/pages/Ascend-Disability-Lawyers-LLC/445889835504828" target="_blank" rel="noopener"><img src="https://ascenddis.wpengine.com/wp-content/uploads/2017/04/fb.png" alt="Facebook" /></a><a href="https://twitter.com/AscendLawyers" target="_blank" rel="noopener"><img src="https://ascenddis.wpengine.com/wp-content/uploads/2017/04/twt.png" alt="Twitter" /></a><a href="https://plus.google.com/u/2/110978696460229801019" target="_blank" rel="noopener">
+              <img src="/wp-content/uploads/2017/09/googleplus_opt.png" alt="Google+"></a></li>
           </ul>
         </div>
       </div>
