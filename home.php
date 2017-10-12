@@ -1,6 +1,7 @@
 <?php get_header() ?>
   <div class="interior_page_header_image">
-    <img src="<?php the_field('interior_hero_image') ?>" alt="<?php bloginfo( 'name' ) ?>">
+    <!-- <img src="<?php the_field('interior_hero_image') ?>" alt="<?php bloginfo( 'name' ) ?>"> -->
+    <img src="/wp-content/uploads/2017/09/int_hero_opt.jpg" alt="<?php bloginfo( 'name' ) ?>">
   </div>
 
   <div class="interior_page_header">
